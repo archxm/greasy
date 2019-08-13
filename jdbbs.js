@@ -35,7 +35,7 @@
 					}
 					let timeText = span[0].innerHTML
 					let dt = new Date(timeText + ":00")
-					if (dt > yesterday && dt < tmToday) {
+					if (dt >= yesterday && dt < tmToday) {
 						span[0].style.color="red"
 					}
 				}
