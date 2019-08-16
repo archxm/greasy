@@ -18,11 +18,10 @@
 		tmToday.setHours(0)
 		tmToday.setMinutes(0)
 		tmToday.setSeconds(0)
-		let yesterday = new Date()
+		let yesterday = new Date(tmToday)
 		yesterday.setDate(yesterday.getDate()-1)
-		yesterday.setHours(0)
-		yesterday.setMinutes(0)
-		yesterday.setSeconds(0)
+		let anteayer = new Date(tmToday)
+		anteayer.setDate(anteayer.getDate()-2)
 		for (let i=0;i<len;i++) {
 			let len2 = tabs[i].tBodies.length
 			for (let j = 0; j < len2; j++) {
@@ -39,7 +38,9 @@
 					let timeText = span[0].innerHTML
 					let dt = new Date(timeText + ":00")
 					if (dt >= yesterday && dt < tmToday) {
-						span[0].style.color="red"
+						span[0].style.color="#FF6464"
+					}else if (dt>=anteayer && dt < yesterday) {
+						span[0].style.color="#F3A21B"
 					}
 				}
 			}
