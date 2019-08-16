@@ -27,6 +27,9 @@
 			let len2 = tabs[i].tBodies.length
 			for (let j = 0; j < len2; j++) {
 				let x = tabs[i].tBodies[j].rows[0].cells[2]
+				if (x == null) {
+					continue
+				}
 				let timeEm = x.getElementsByTagName("em")[0]
 				if (timeEm){
 					let span = timeEm.getElementsByTagName("span")
