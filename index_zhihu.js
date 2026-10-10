@@ -82,7 +82,7 @@
                             badge.style.backgroundColor = '#06f'; // 变成知乎蓝
                             item.dataset.isBlue = 'true'; // 标记已变蓝
                             viewObserver.unobserve(item); // 既然变蓝了，就取消对它的视口监听，省电省性能
-                        }, 2000);
+                        }, 4000);
                     }
                 } else {
                     // 情况2：划出屏幕，如果 2 秒还没到，直接清除定时器，保持红色
