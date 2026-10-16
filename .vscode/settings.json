@@ -15,5 +15,8 @@
 		"statusBar.debuggingForeground": "#FEF9F9",
 		"statusBar.noFolderBackground": "#A02C18",
 		"statusBar.noFolderForeground": "#FEF9F9"
-	}
+	},
+	"editor.tabSize": 4,
+	"editor.insertSpaces":true,
+	"editor.detectIndentation": true
 }
